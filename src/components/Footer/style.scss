@@ -1,0 +1,27 @@
+.footer {
+	text-align: center;
+	padding: 5vw 0 5vw;
+	text-transform: uppercase;
+  
+	.section-header {
+		letter-spacing: 1px;
+    font-size: 1rem;
+		font-family: Syncopate, sans-serif;
+		font-weight: 600;
+		color: #626262;
+    vertical-align: baseline;
+    margin-bottom: 20px;
+	}
+	.location {
+		font-size: 18vw;
+		font-family: serif;
+    line-height: 1.1;
+	}
+}
+
+.locationParent{
+	overflow: hidden;
+}
+.locationChildren{
+	transform: translate(0, 500px);
+}

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700;6..96,800;6..96,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+$bg-color: #f5f0ec;
+body {
+	font-family: "Poppins", sans-serif;
+	cursor: none;
+	background-color: $bg-color;
+}
+.App {
+	padding: 0 5vw;
+}
+section {
+	padding: 100px 0;
+	.section-header {
+		margin-bottom: 50px;
+	}
+}
+
+.loader-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #191919;
+	color: #dbd8d6;
+	h1 {
+		font-size: 1.5vw;
+		text-transform: uppercase;
+		font-family: "Bai Jamjuree", sans-serif;
+		font-weight: 600;
+	}
+	h2 {
+		font-size: 1.5vw;
+		text-transform: uppercase;
+		font-family: "Bodoni Moda", sans-serif;
+		font-style: italic;
+		margin-top: 10px;
+	}
+}
+
+.absolute{
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+}
