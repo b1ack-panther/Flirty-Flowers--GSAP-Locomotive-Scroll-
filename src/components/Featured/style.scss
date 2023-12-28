@@ -1,7 +1,8 @@
 .featured-section {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
+	grid-template-columns: 3fr 7fr;
 	align-items: center;
+	padding-top: 100px;
 	img {
 		clip-path: inset(100% 0% 0% 0%);
 		transition: clip-path 1s cubic-bezier(0.77, 0, 0.178,1);
@@ -10,14 +11,13 @@
 		}
 	}
 	h6 {
-		font-size: 22px;
+		font-size: 16px;
 		text-transform: uppercase;
 		font-weight: 500;
 	}
 	.featured-row-layout,
 	.featured-column-layout {
 		display: grid;
-		gap: 10px;
 	}
 	.featured-row-layout {
 		grid-template-rows: repeat(2, auto);
@@ -27,15 +27,15 @@
 		}
 	}
 	.featured-column-layout {
-		grid-template-columns: 100px auto;
+		grid-template-columns: 30px auto;
 		align-items: flex-end;
 		img {
 			width: 100%;
-			height: 125vh;
+			height: 120vw;
 			object-fit: cover;
 		}
 		h6 {
-			transform: translateX(100%) rotate(-90deg);
+			transform:translateX(100%) rotate(-90deg);
 			transform-origin: left bottom;
 			justify-self: self-end;
 		}

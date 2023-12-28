@@ -10,11 +10,10 @@ function GalleryItem({
 	index,
 }) {
 	const imgRef = useRef(null);
-	const onScreen = useOnScreen(imgRef, 0.7);
+	const onScreen = useOnScreen(imgRef, 0.6);
 	useEffect(() => {
 		if (onScreen) {
 			updateActiveImage(index);
-			console.log(index);
 		}
 	}, [onScreen, index, updateActiveImage]);
 	return (

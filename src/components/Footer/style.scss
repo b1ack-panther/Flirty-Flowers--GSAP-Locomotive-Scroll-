@@ -1,7 +1,9 @@
 .footer {
 	text-align: center;
-	padding: 5vw 0 5vw;
 	text-transform: uppercase;
+	height: 100vh;
+	display: grid;
+	place-content: center;
   
 	.section-header {
 		letter-spacing: 1px;

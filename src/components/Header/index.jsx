@@ -14,26 +14,26 @@ function Header() {
 			type: "lines",
 			linesClass: "lineParent"
 		});
-
+		
 		gsap.to(split.lines, {
 			duration: 1,
-			stagger: 0.1,
+			stagger: 0.2,
 			y: 0,
 			opacity: 1,
-			ease: "power2",
+			ease: "power2.out",
 		})
 
 	}, [])
 
   return (
-		<section className="header-container" >
+		<div className="header-container" >
 			<ul className="header-menu">
 				<li>Intro</li>
 				<li>About </li>
 				<li>Feature</li>
 			</ul>
 			<h1 id="header-text">Art Objects</h1>
-		</section>
+		</div>
 	);
 }
 

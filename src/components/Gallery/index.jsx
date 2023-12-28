@@ -32,46 +32,10 @@ const images = [
 ];
 
 function Gallery() {
-	const [activeImage, setActiveImage] = useState(0);
+	const [activeImage, setActiveImage] = useState(1);
 	gsap.registerPlugin(ScrollTrigger);
 
 	const ref = useRef(null);
-
-	// function GalleryItem({
-	// 	src,
-	// 	title,
-	// 	subtitle,
-	// 	category,
-	// 	updateActiveImage,
-	// 	index,
-	// }) {
-	// 	const imgRef = useRef(null);
-	// 	const onScreen = useOnScreen(imgRef, 0.8);
-	// 	useEffect(() => { 
-	// 		if (onScreen) {
-	// 			// setActiveImage(index)
-	// 			console.log(index);
-	// 		}
-	// 	}, [onScreen, index])
-	// 	return (
-	// 		<div className="gallery-item-wrapper" ref={imgRef}>
-	// 			<div />
-	// 			<div className="gallery-item">
-	// 				<div className="gallery-item-info">
-	// 					<h1 className="gallery-info-title">{title}</h1>
-	// 					<h6 className="gallery-info-subtitle">{subtitle}</h6>
-	// 					<p className="gallery-info-category">{category}</p>
-	// 				</div>
-	// 				<div
-	// 					className="gallery-item-image"
-						
-	// 					style={{ backgroundImage: `url(${src})` }}
-	// 				></div>
-	// 			</div>
-	// 			<div />
-	// 		</div>
-	// 	);
-	// }
 
 	useEffect(() => {
 		const ctx = gsap.context(() => {
@@ -84,17 +48,16 @@ function Gallery() {
 					start: "top top",
 					end: () => "+=" + ref.current.offsetWidth,
 					pin: true,
-					scrub: true,
+					scrub: 0.5,
 					snap: 1 / (sections.length - 1),
 				},
 			});
-			ScrollTrigger.refresh();
 		}, ref);
 		return () => ctx.revert();
 	}, []);
 
 	return (
-		<div className="section-wrapper gallery-wrap" data-scroll-speed="-0.2">
+		<div className="section-wrapper gallery-wrap" data-scroll-speed="-0.5">
 			<div className="gallery" ref={ref}>
 				<div className="gallery-counter">
 					<span>{activeImage}</span>

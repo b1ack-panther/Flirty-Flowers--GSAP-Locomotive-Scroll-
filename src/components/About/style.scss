@@ -1,6 +1,10 @@
 #headline{
-  font-size: 70px;
+  font-size: min(65px, 8vw);
   line-height: 1.12;
+}
+
+.about-section{
+  padding: 12vw 0;
 }
 
 .aboutSplit{

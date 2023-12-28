@@ -1,8 +1,9 @@
 .navbar {
 	display: flex;
 	justify-content: space-between;
-	padding: 50px 0;
-	font-size: 24px;
+	margin-top: max(50px, 3vw);
+	margin-bottom: max(50px, 3vw);
+	font-size: clamp(8px, 3vw, 1.5rem);
 	letter-spacing: 1px;
 	font-family: "Syncopate", sans-serif;
 	color: #464646;

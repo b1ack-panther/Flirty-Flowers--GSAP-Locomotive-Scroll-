@@ -18,7 +18,7 @@ function Footer() {
 
 		const tl = gsap.timeline({
 			scrollTrigger: {
-				trigger: "#location-text",
+				trigger: ".footer",
 				start: "top 70%",
 				scrub: false,
 			}
@@ -33,12 +33,12 @@ function Footer() {
 	}, []);
 
 	return (
-		<section className="footer" data-scroll>
+		<div className="footer" data-scroll>
 			<SectionHeader title="Made In" />
 			<h1 className="location" id="location-text">
 				Rio De Janiero
 			</h1>
-		</section>
+		</div>
 	);
 }
 

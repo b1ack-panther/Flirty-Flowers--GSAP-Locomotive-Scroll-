@@ -3,8 +3,9 @@
 	.header-menu {
 		position: absolute;
 		left: 0;
-		top: 100px;
+		top: min(100px, 5vw);
 		letter-spacing: 1px;
+		font-size: max(1.7vw, 12px);
 		font-family: "Syncopate", sans-serif;
 		color: #626262;
 		text-transform: uppercase;
@@ -15,7 +16,9 @@
 		}
 	}
 	#header-text {
-		font-size: 20vw;
+		font-size: 16vw;
+		padding-top: max(150px, 10vh);
+		padding-bottom: 50px;
 		text-transform: uppercase;
 		text-align: center;
 		font-family: "Bai Jamjuree", sans-serif;
