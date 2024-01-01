@@ -5,10 +5,10 @@
 	padding-top: 100px;
 	img {
 		clip-path: inset(100% 0% 0% 0%);
-		transition: clip-path 1s cubic-bezier(0.77, 0, 0.178,1);
-		&.is-inview{
-			clip-path: inset(0% 0% 0% 0%);
-		}
+		transition: clip-path 1s cubic-bezier(0.77, 0, 0.178, 1);
+	}
+	.is-visible {
+		clip-path: inset(0% 0% 0% 0%);
 	}
 	h6 {
 		font-size: 16px;
@@ -31,11 +31,11 @@
 		align-items: flex-end;
 		img {
 			width: 100%;
-			height: 120vw;
+			height: 100vw;
 			object-fit: cover;
 		}
 		h6 {
-			transform:translateX(100%) rotate(-90deg);
+			transform: translateX(100%) rotate(-90deg);
 			transform-origin: left bottom;
 			justify-self: self-end;
 		}
